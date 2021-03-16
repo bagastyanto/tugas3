@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> Contoh Program javascript</title>
+    </head>
+    <script language="JavaScript">
+        // memanggil fucntion untuk menghitung perhitungan
+        function test (val1,val2)
+        {
+            // melakukan perintah perkalian
+            document.write("<br>"+"Perkalian : val1*val2 "+"<br>")
+            document.write(val1*val2) // output : hasil perkalian val1 dan val2
+
+            // melakukan perintah pembagian
+            document.write("<br>"+"Pembagian : val1*val2 "+"<br>")
+            document.write(val1/val2) // output : hasil pembagian val1 dan val2
+
+            // melakukan perintah penjumlahan
+            document.write("<br>"+"Perjumlahan : val1*val2 "+"<br>")
+            document.write(val1+val2) // output : hasil perjumlahan val1 dan val2
+
+            // melakukan perintah pengurangan
+            document.write("<br>"+"Pengurangan : val1*val2 "+"<br>")
+            document.write(val1-val2) // output : hasil pengurangan val1 dan val2
+
+            // melakukan perintah modulus
+            document.write("<br>"+"Modulus : val1*val2 "+"<br>")
+            document.write(val1%val2) // output : hasil modulus val1 dan val2
+        }
+    </script>
+    <body>
+        <!--menginput button untuk mengeksekusi function-->
+        <input type="button" name="button1" value="arithmetic"
+        onclick=test(9,4)>
+    </body>
+</html>

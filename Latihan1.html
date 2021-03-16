@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--untuk masuk pada laman selanjutnya -->
+    <input type="button" name="cek" value="Cek Nilai Anda" onclick="cek()">
+
+    <script>
+      function cek()
+      {
+        //untuk memasukkan nilai
+        nilai = window.prompt("Masukkan Nilai Anda (0-100) : ");
+        hasil = "";
+        //untuk menseleksi nilai
+        if (nilai > 100 || nilai < 0) {
+          hasil = "diluar range!";
+        }else if (nilai > 80) {
+          hasil = "A";
+        }else if (nilai > 70) {
+          hasil = "AB";
+        }else if (nilai > 65) {
+          hasil = "B";
+        }else if (nilai > 60) {
+          hasil = "BC";
+        }else if (nilai > 55) {
+          hasil = "C";
+        }else if (nilai > 40) {
+          hasil = "D";
+        }else {
+          hasil = "E";
+        }
+        //untuk menampilkan nilai yang sudah di ubah pada tampilan alert
+        alert("Nilai yang anda dapat adalah : "+hasil);
+      }
+    </script>
+  </body>
+</html>

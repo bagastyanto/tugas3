@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Contoh Program Javascript</title>
+</head>
+<script language="JavaScript">
+    // memanggil function untuk membandingkan nilai
+    function test() {
+
+        // deklarasi dan menginput nilai 1
+        val1=window.prompt("Nilai I :")
+        // deklarasi dan menginput nilai 2
+        val2=window.prompt("Nilai II :")
+ 
+        // cek apakah nilai 1 sama dengan nilai 2
+        document.write("<br>"+"val1==val2"+"<br>")
+        document.write(val1==val2) // output : true/false
+
+        // cek apakah nilai 1 tidak sama dengan nilai 2
+        document.write("<br>"+"val1!=val2"+"<br>")
+        document.write(val1!=val2) // output : true/false
+
+        // cek apakah nilai 1 lebih besar dari nilai 2
+        document.write("<br>"+"val1&gtval2"+"<br>")
+        document.write(val1>val2) // output : true/false
+
+        // cek apakah nilai 1 lebih kecil dari nilai 2
+        document.write("<br>"+"val1&ltval2"+"<br>")
+        document.write(val1<val2) // output : true/false
+    }
+</script>
+<body>
+    <!--menginput button untuk mengeksekusi function-->
+    <input type="button" name="button1" value="relation" onclick=test()>
+</body>
+</html>
